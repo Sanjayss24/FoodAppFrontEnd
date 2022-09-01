@@ -1,0 +1,93 @@
+<h4>Add Admin</h4>
+<div class="container">
+    
+    <form #addDataa="ngForm" (ngSubmit)="addAdmin(addDataa)">
+        <div class="form-group">
+          <label for="exampleInputEmail1">AdminName</label>
+          <input type="text" 
+          class="form-control" 
+          ngModel
+          id="aname" 
+          name="aname"
+          #aname="ngModel"
+          placeholder="Enter Admin Name"
+          required
+          [(ngModel)]="admin.aname"
+          >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Admin Email</label>
+            <input type="email" 
+            class="form-control" 
+            ngModel
+            id="aemail" 
+            name="aemail"
+            #aemail="ngModel"
+            placeholder="Enter Admin Email"
+            required
+            [(ngModel)]="admin.aemail"
+            >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Admin Password</label>
+                <input type="password" 
+                class="form-control" 
+                ngModel
+                id="apass" 
+                name="apass"
+                #apass="ngModel"
+                placeholder="Enter Admin Password"
+                required
+              [(ngModel)]="admin.apass"
+              
+                >
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Branch Name</label>
+                  <input type="text" 
+                  class="form-control" 
+                  ngModel
+                  id="branch.name" 
+                  name="branch.name"
+                  #branch.name="ngModel"
+                  placeholder="Branch name"
+                  required
+                  [(ngModel)]="admin.branch.name"
+                  >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Branch code</label>
+                    <input type="text" 
+                    class="form-control" 
+                    ngModel
+                    id="branch.code" 
+                    name="branch.code"
+                    #branch.code="ngModel"
+                    placeholder="Branch code"
+                    required
+                    [(ngModel)]="admin.branch.code"
+                    >
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Branch address</label>
+                      <input type="text" 
+                      class="form-control" 
+                      ngModel
+                      id="branch.address" 
+                      name="branch.address"
+                      #branch.address="ngModel"
+                      placeholder="Branch address"
+                      required
+                      [(ngModel)]="admin.branch.address"
+                      >
+                      </div>
+
+                      
+                        
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+
+    </div>

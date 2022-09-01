@@ -1,0 +1,148 @@
+<h4>Add BranchManager</h4>
+<div class="container">
+    
+    <form #addData="ngForm" (ngSubmit)="addBranchManager(addData)">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Branch Manager Name</label>
+          <input type="text" 
+          class="form-control" 
+          ngModel
+          id="bname" 
+          name="bname"
+          #bname="ngModel"
+          placeholder="Enter Branch Manager Name"
+          required
+          [(ngModel)]="branchManager.bname"
+          >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">BranchManager email</label>
+            <input type="email" 
+            class="form-control" 
+            ngModel
+            id="bemail" 
+            name="bemail"
+            #bemail="ngModel"
+            placeholder="Enter BranchManager email  "
+            required
+            [(ngModel)]="branchManager.bemail"
+            >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">BranchManager Password</label>
+                <input type="password" 
+                class="form-control" 
+                ngModel
+                id="bpass" 
+                name="bpass"
+                #bpass="ngModel"
+                placeholder="Enter BranchManager Password"
+                required
+              [(ngModel)]="branchManager.bpass"
+              
+                >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Food Name</label>
+                  <input type="text" 
+                  class="form-control" 
+                  ngModel
+                  id="foodProduct.name" 
+                  name="foodProduct.name"
+                  #foodProduct.name="ngModel"
+                  placeholder="Food name"
+                  required
+                  [(ngModel)]="branchManager.foodProduct.name"
+                  >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Food type</label>
+                    <input type="text" 
+                    class="form-control" 
+                    ngModel
+                    id="foodProduct.type" 
+                    name="foodProduct.type"
+                    #foodProduct.type="ngModel"
+                    placeholder="Food Type"
+                    required
+                    [(ngModel)]="branchManager.foodProduct.type"
+                    >
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">About Food</label>
+                      <input type="text" 
+                      class="form-control" 
+                      ngModel
+                      id="foodProduct.about" 
+                      name="foodProduct.about"
+                      #foodProduct.about="ngModel"
+                      placeholder="Food about"
+                      required
+                      [(ngModel)]="branchManager.foodProduct.about"
+                      >
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Food product Price</label>
+                        <input type="text" 
+                        class="form-control" 
+                        ngModel
+                        id="foodProduct.price" 
+                        name="foodProduct.price"
+                        #foodProduct.price="ngModel"
+                        placeholder="Food product Price"
+                        required
+                        [(ngModel)]="branchManager.foodProduct.price"
+                        >
+                        </div>
+
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Staff Name</label>
+                          <input type="text" 
+                          class="form-control" 
+                          ngModel
+                          id="staffs.sname" 
+                          name="staffs.sname"
+                          #staffs.sname="ngModel"
+                          placeholder="Staff Name"
+                          required
+                          [(ngModel)]="branchManager.staffs.sname"
+                          >
+                          </div>
+
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Staff Email</label>
+                          <input type="email" 
+                          class="form-control" 
+                          ngModel
+                          id="staffs.semail" 
+                          name="staffs.semail"
+                          #staffs.semail="ngModel"
+                          placeholder="Enter Staff Email"
+                          required
+                          [(ngModel)]="branchManager.staffs.semail"
+                          >
+                          </div>
+
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">BranchManager Password</label>
+                            <input type="password" 
+                            class="form-control" 
+                            ngModel
+                            id="staffs.spass" 
+                            name="staffs.spass"
+                            #staffs.spass="ngModel"
+                            placeholder="Enter Staff password"
+                            required
+                            [(ngModel)]="branchManager.staffs.spass"
+                            >
+                            </div>
+                        
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+
+    </div>
+
+

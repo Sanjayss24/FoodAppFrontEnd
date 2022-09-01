@@ -1,0 +1,28 @@
+
+
+<h2>Brach Manager List</h2>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">email</th>
+        <th scope="col">Password</th>
+       
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor = "let b of bmarray">
+        <td>{{b.id}}</td>
+        <td>{{b.bname}}</td>
+        <td>{{b.bemail}}</td>
+        <td>{{b.bpass}}</td>
+       
+      </tr>
+      
+    </tbody>
+  </table>
+
+ 

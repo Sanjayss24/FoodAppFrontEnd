@@ -1,1 +1,96 @@
-<p>edit-food-order works!</p>
+
+<h4>Update FoodOrder</h4>
+<div class="container">
+    
+    <form #addData="ngForm" (ngSubmit)="updatefo(addData)">
+        <div class="form-group">
+          <label for="exampleInputEmail1">FoodOrderTime</label>
+          <input type="text" 
+          class="form-control" 
+          ngModel
+          id="orderTime" 
+          name="orderTime"
+          #orderTime="ngModel"
+          placeholder="Enter FoodOrderTime"
+          required
+          [(ngModel)]="foodOrder.orderTime"
+          >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Customer Name</label>
+            <input type="text" 
+            class="form-control" 
+            ngModel
+            id="customerName" 
+            name="customerName"
+            #customerName="ngModel"
+            placeholder="Enter customerName"
+            required
+            [(ngModel)]="foodOrder.customerName"
+            >
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Customer Mobile Number</label>
+                <input type="text" 
+                class="form-control" 
+                ngModel
+                id="mobileNumber" 
+                name="mobileNumber"
+                #mobileNumber="ngModel"
+                placeholder="Enter Mobile Number"
+                required
+                [(ngModel)]="foodOrder.mobileNumber"
+                >
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Total Price</label>
+                  <input type="text" 
+                  class="form-control" 
+                  ngModel
+                  id="totalPrice" 
+                  name="totalPrice"
+                  #totalPrice="ngModel"
+                  placeholder="total Price"
+                  required
+                  [(ngModel)]="foodOrder.totalPrice"
+                  >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Item Name</label>
+                    <input type="text" 
+                    class="form-control" 
+                    ngModel
+                    id="items.name" 
+                    name="items.name"
+                    #items.name="ngModel"
+                    placeholder="Item Name"
+                    required
+                    [(ngModel)]="foodOrder.items.name"
+                    >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Item Quantity</label>
+                        <input type="text" 
+                        class="form-control" 
+                        ngModel
+                        id="items.quantity" 
+                        name="items.quantity"
+                        #items.quantity="ngModel"
+                        placeholder="items quantity"
+                        required
+                        [(ngModel)]="foodOrder.items.quantity"
+                        >
+                        </div>
+
+                        
+
+                      
+                        
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+
+    </div>

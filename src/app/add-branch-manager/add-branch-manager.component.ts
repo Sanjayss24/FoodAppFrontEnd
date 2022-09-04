@@ -12,8 +12,10 @@ import { BranchmanagerService } from '../Services/branchmanager.service';
   styleUrls: ['./add-branch-manager.component.css']
 })
 export class AddBranchManagerComponent implements OnInit {
-  branchManager = new BranchManager();
+
   constructor(private saveBranchManager:BranchmanagerService) { }
+
+  branchManager = new BranchManager
 
   ngOnInit(): void {
   }
@@ -22,7 +24,7 @@ export class AddBranchManagerComponent implements OnInit {
     console.log(form.value);
     console.log(this.branchManager);
     
-    this.saveBranchManager.addBranchManagers(this.branchManager).subscribe((res)=>{
+    this.saveBranchManager.addBranchManager(this.branchManager).subscribe((res)=>{
       console.log(res);
       
     }

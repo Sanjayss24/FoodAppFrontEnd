@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Admin } from '../admin';
@@ -31,7 +32,6 @@ export class AdminAddComponent implements OnInit {
       
      }
 }
-
 
 
     

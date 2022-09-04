@@ -99,6 +99,20 @@
                         </div>
 
                         <div class="form-group">
+                          <label for="exampleInputEmail1">Menu name</label>
+                          <input type="text" 
+                          class="form-control" 
+                          ngModel
+                          id="foodProduct.menu.name" 
+                          name="foodProduct.menu.name"
+                          #foodProduct.menu.name="ngModel"
+                          placeholder="Food product Price"
+                          required
+                          [(ngModel)]="branchManager.foodProduct.menu.name"
+                          >
+                          </div>
+
+                        <div class="form-group">
                           <label for="exampleInputEmail1">Staff Name</label>
                           <input type="text" 
                           class="form-control" 
@@ -127,7 +141,7 @@
                           </div>
 
                           <div class="form-group">
-                            <label for="exampleInputEmail1">BranchManager Password</label>
+                            <label for="exampleInputEmail1">Staff Password</label>
                             <input type="password" 
                             class="form-control" 
                             ngModel
@@ -144,5 +158,3 @@
       </form>
 
     </div>
-
-

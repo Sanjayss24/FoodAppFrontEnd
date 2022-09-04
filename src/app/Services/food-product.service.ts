@@ -11,6 +11,13 @@ export class FoodProductService {
  
   addFoodProducts(saveFoodProduct:any){
     return this.http.post(`http://localhost:8080/api/savefp`,saveFoodProduct);
+  }  
+
+  getFoodProduct(){
+      return this.http.get(`http://localhost:8080/api/allfp`);
+      
   }
+
+ 
 
 }

@@ -1,1 +1,28 @@
-<p>display-food-order works!</p>
+<h2>FoodOrder List</h2>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Food OrderTime</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Mobile No.</th>
+        <th scope="col">Price</th>
+        <th scope="col">Item</th>
+        <th scope="col">Item Quantity</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let f of foarray">
+        <td>{{f.id}}</td>
+        <td>{{f.orderTime}}</td>
+        <td>{{f.customerName}}</td>
+        <td>{{f.mobileNumber}}</td>
+        <td>{{f.totalPrice}}</td>
+        <td>{{f.items.name}}</td>
+        <td>{{f.items.quantity}}</td>
+      
+      </tr>
+      
+    </tbody>
+  </table>

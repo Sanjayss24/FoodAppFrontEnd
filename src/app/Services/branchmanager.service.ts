@@ -12,9 +12,16 @@ export class BranchmanagerService {
     return this.http.get(`http://localhost:8080/api/allbm`);
   }
 
-  addBranchManagers(branchManager:any){
+  addBranchManager(branchManager:any){
     return this.http.post(`http://localhost:8080/api/savebm`,branchManager);
   }
 
- 
+ updateBranchManager(id:any,branchManager:any){
+    return this.http.put(`http://localhost:8080/api/updatebm/${id}`,branchManager);
+ }
+
+ deletebm(id:any){
+  return this.http.delete(`http://localhost:8080/api/deletebm/${id}`);
+}
+
 }

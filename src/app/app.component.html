@@ -1,1 +1,72 @@
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    
+    <nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Food Application</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="#" routerLink="home">Home <span class="sr-only">(current)</span></a>
+          </li>
+        <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Admin
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" routerLink="addadmin">Add</a>
+              <a class="dropdown-item" href="#" routerLink="editadmin">Update</a>
+              <a class="dropdown-item" href="#" routerLink="deleteadmin">Delete</a>
+              <a class="dropdown-item" href="#" routerLink="alladmin">All Admins</a>
+              <a class="dropdown-item" href="#" routerLink="allbranch">All Branches</a>
+            </div>
+          </li>
+
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Branch Manager
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" routerLink="addbm">Add</a>
+              <a class="dropdown-item" href="#" routerLink="editbm">Update</a>
+              <a class="dropdown-item" href="#" routerLink="deletebm">Delete</a>
+              <a class="dropdown-item" href="#" routerLink="allbm">All BranchManagers</a>
+              <a class="dropdown-item" href="#" routerLink="allfp">All FoodProducts</a>
+              <a class="dropdown-item" href="#" routerLink="allstaffs">All Staffs</a>
+              <a class="dropdown-item" href="#" routerLink="bill">Bill</a> 
+            </div>
+          </li>
+     
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Staffs
+            </a>
+            <div class="dropdown-menu">
+
+             <a class="dropdown-item" href="#" routerLink="allfo">Customer Orders</a>
+             <a class="dropdown-item" href="#" routerLink="allfp">All FoodProducts</a>
+             
+            </div>
+          </li>
+         
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Order Food
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" routerLink="allfp">Menu</a>
+              <a class="dropdown-item" href="#" routerLink="addfo">Order</a>
+              <a class="dropdown-item" href="#" routerLink="updatefo/id">Update</a>
+              <a class="dropdown-item" href="#" routerLink="deletecfo">Delete</a>
+            </div>
+          </li> 
+      </ul>
+    </div>
+</nav>
+</nav>
+
+
+
 <router-outlet></router-outlet>
